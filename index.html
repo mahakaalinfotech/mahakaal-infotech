@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahakaal Infotech</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+padding:20px 8%;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#fff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#06b6d4;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#06b6d4;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#0284c7;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#0f172a;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.why{
+background:#0f172a;
+color:white;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.contact{
+background:white;
+}
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+background:#2563eb;
+border:none;
+padding:15px 35px;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:30px;
+right:30px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Mahakaal Infotech</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Mahakaal Infotech</h1>
+
+<p>
+Telecom IMS • EPC Solutions • Desktop Support • Web Development •
+Application Development • Artificial Intelligence
+</p>
+
+<a href="#services" class="btn">Explore Services</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+Mahakaal Infotech is a leading technology company providing
+Telecom IMS & EPC solutions, IT Infrastructure Support,
+Desktop Support Services, Computer Operations, Website Development,
+Application Development, and AI-Powered Business Solutions.
+
+We help businesses accelerate digital transformation through
+innovation, reliability, and advanced technology.
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<i class="fas fa-tower-cell"></i>
+<h3>Telecom IMS & EPC</h3>
+<p>
+LTE, VoLTE, IMS Core, EPC Network, Protocol Analysis,
+5G Support, Telecom Testing & Integration.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-desktop"></i>
+<h3>Desktop Support</h3>
+<p>
+Hardware Support, Software Installation,
+Network Troubleshooting and IT Infrastructure Maintenance.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-keyboard"></i>
+<h3>Computer Operator</h3>
+<p>
+Data Entry, Documentation,
+Report Preparation and Administrative Support.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-globe"></i>
+<h3>Web Development</h3>
+<p>
+Professional Business Websites,
+E-Commerce Portals and Responsive Designs.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-mobile-screen"></i>
+<h3>Application Development</h3>
+<p>
+Android Apps,
+Web Applications and Enterprise Business Solutions.
+</p>
+</div>
+
+<div class="card">
+<i class="fas fa-robot"></i>
+<h3>Artificial Intelligence</h3>
+<p>
+AI Chatbots, Automation,
+Machine Learning and Generative AI Solutions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2 class="section-title" style="color:white;">
+Why Choose Us
+</h2>
+
+<div class="features">
+
+<div class="feature">
+✅ Telecom Industry Expertise
+</div>
+
+<div class="feature">
+✅ Experienced Technical Team
+</div>
+
+<div class="feature">
+✅ Affordable Pricing
+</div>
+
+<div class="feature">
+✅ Fast Project Delivery
+</div>
+
+<div class="feature">
+✅ 24x7 Technical Support
+</div>
+
+<div class="feature">
+✅ Latest AI Technologies
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<form onsubmit="sendMessage(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Mahakaal Infotech</h3>
+
+<p>
+Telecom | IT Support | Web Development |
+Application Development | AI Solutions
+</p>
+
+<p>
+© 2026 Mahakaal Infotech. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/919999999999" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+
+function sendMessage(e){
+e.preventDefault();
+alert("Thank You! We will contact you soon.");
+}
+
+window.addEventListener("scroll",()=>{
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+const pos=card.getBoundingClientRect().top;
+
+if(pos<window.innerHeight-100){
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+}
+
+})
+
+});
+
+</script>
+
+</body>
+</html>
